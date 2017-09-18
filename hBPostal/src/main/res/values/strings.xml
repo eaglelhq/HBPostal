@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">邮支付</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">首页</string>
+    <string name="cart">购物车</string>
+    <string name="locate">一键定位</string>
+    <string name="delivery">商品分类</string>
+    <string name="me">个人中心</string>
+    <string name="ssdk_oks_sharing">正在分享...</string>
+    <string name="changephone1">* 请输入原手机号并验证\n* 用于解绑之前的手机号码\n* 更改手机号码后需重新登录</string>
+    <string name="changephone2">* 请输入你要更换的手机号并验证\n* 更改手机号码后需重新登录</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="much_score_int">%1$d 分</string>
+    <string name="sign">签到</string>
+    <string name="sign_succeed_today">今日签到成功，增加积分</string>
+    <string name="sure">确定</string>
+    <string-array name="month_array">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+
+    <string name="sjts">温馨提示：\n1、手机充值功能适用于中国移动全国用户、中国电信全国用户、中国联通鹤壁地区用户\n2、充值话费24小时内到账\n3、选择固定金额充值，如有积分，可抵用等额话费</string>
+    <string name="ghts">温馨提示：\n1、固话缴费功能适用于联通固话鹤壁用户、电信固话鹤壁用户\n2、充值话费24小时内到账\n3、选择固定金额缴费，如有积分，可抵用等额话费</string>
+</resources>

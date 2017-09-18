@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_active_msg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_wallet_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/interaction_icon5" />
+
+        <ImageView
+            android:id="@+id/iv_active_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_user_wallet_icon"
+            android:layout_alignTop="@+id/iv_user_wallet_icon"
+            android:src="@drawable/msg_number_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_user_wallet_icon"
+            android:gravity="center_vertical"
+            android:text="活动信息"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_voucher_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/interaction_icon4" />
+
+        <ImageView
+            android:id="@+id/iv_notice_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_user_voucher_icon"
+            android:layout_alignTop="@+id/iv_user_voucher_icon"
+            android:src="@drawable/msg_number_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_user_voucher_icon"
+            android:gravity="center_vertical"
+            android:text="通知公告"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_faq"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector" >
+
+        <ImageView
+            android:id="@+id/iv_user_schedule_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/interaction_icon3" />
+
+        <ImageView
+            android:id="@+id/iv_faq_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_user_schedule_icon"
+            android:layout_alignTop="@+id/iv_user_schedule_icon"
+            android:src="@drawable/msg_number_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_user_schedule_icon"
+            android:gravity="center_vertical"
+            android:text="常见问题"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_consulting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_feedback_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/interaction_icon2" />
+
+        <ImageView
+            android:id="@+id/iv_consulting_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_user_feedback_icon"
+            android:layout_alignTop="@+id/iv_user_feedback_icon"
+            android:visibility="gone"
+            android:src="@drawable/msg_number_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_user_feedback_icon"
+            android:gravity="center_vertical"
+            android:text="客户咨询"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_more_zx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:id="@+id/tv_zx_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_more_zx"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gary"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_complain"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector" >
+
+        <ImageView
+            android:id="@+id/iv_user_cooperation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/interaction_icon1" />
+
+        <ImageView
+            android:id="@+id/iv_complain_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_user_cooperation_icon"
+            android:layout_alignTop="@+id/iv_user_cooperation_icon"
+            android:visibility="gone"
+            android:src="@drawable/msg_number_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_user_cooperation_icon"
+            android:gravity="center_vertical"
+            android:text="客户投诉"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_ts_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_more_ts"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gary"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_more_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_push_msg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_click_selector" >
+
+        <ImageView
+            android:id="@+id/iv_msg_push_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/interaction_icon6" />
+
+        <ImageView
+            android:id="@+id/iv_push_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_msg_push_icon"
+            android:layout_alignTop="@+id/iv_msg_push_icon"
+            android:visibility="gone"
+            android:src="@drawable/msg_number_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_msg_push_icon"
+            android:gravity="center_vertical"
+            android:text="推送消息"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_push_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_more_push"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gary"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_more_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_interact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':library', ':scrolllayout', ':storeapp', ':testapp', ':ocridcardlibrary'
+include ':librarytao'
+include ':hBPostal'

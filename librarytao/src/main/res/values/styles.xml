@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- popup 弹出dialog 样式 -->
+    <style name="popup_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="timeselectPopAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_popupwindow_out</item>
+    </style>
+
+    <style name="dialogTiShiAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_alpha_in</item>
+        <!-- <item name="android:windowExitAnimation">@anim/anim_alpha_out</item> -->
+    </style>
+    
+    <!-- dialog menu 蓝色字体样式 -->
+    <style name="dialog_bule_font">
+        <item name="android:textColor">#0079ff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+        <!-- dialog menu 红色字体样式 -->
+    <style name="dialog_red_font">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="progress_circle">
+        <item name="android:indeterminateDrawable">@drawable/progress_circle_loading</item>  
+    </style>
+    
+
+</resources>

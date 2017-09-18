@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_order_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mine_icon_order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_order_icon"
+            android:text="我的订单"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_all_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/common_more"
+            android:gravity="center"
+            android:text="查看全部"
+            android:textColor="@color/gary"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_dzf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_dzf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/mine_icon_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_dzf"
+                android:layout_centerHorizontal="true"
+                android:text="待付款"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_dzf_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_dzf"
+                android:layout_alignTop="@+id/iv_dzf"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/msg_num_bg"
+                android:gravity="center"
+                android:text="1"
+                android:visibility="gone"
+                android:textColor="@color/red"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dfh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_dfh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/mine_icon_deliver" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_dfh"
+                android:layout_centerHorizontal="true"
+                android:text="待发货"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_dfh_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_dfh"
+                android:layout_alignTop="@+id/iv_dfh"
+                android:background="@drawable/msg_num_bg"
+                android:gravity="center"
+                android:text="1"
+                android:visibility="gone"
+                 android:layout_marginTop="-5dp"
+                android:layout_marginRight="-5dp"
+                android:textColor="@color/red"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dsh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_dsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/mine_icon_receipt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_dsh"
+                android:layout_centerHorizontal="true"
+                android:text="待收货"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_dsh_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_dsh"
+                android:layout_alignTop="@+id/iv_dsh"
+                android:background="@drawable/msg_num_bg"
+                android:gravity="center"
+                 android:layout_marginTop="-5dp"
+                android:layout_marginRight="-5dp"
+                android:text="1"
+                android:visibility="gone"
+                android:textColor="@color/red"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dpj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_dpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/mine_icon_evaluate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_dpj"
+                android:layout_centerHorizontal="true"
+                android:text="待评价"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_dpj_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_dpj"
+                android:layout_alignTop="@+id/iv_dpj"
+                android:background="@drawable/msg_num_bg"
+                android:gravity="center"
+                android:text="1"
+                android:visibility="gone"
+                 android:layout_marginTop="-5dp"
+                android:layout_marginRight="-5dp"
+                android:textColor="@color/red"
+                android:textSize="8dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+
+</LinearLayout>

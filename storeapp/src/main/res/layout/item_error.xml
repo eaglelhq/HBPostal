@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableTop="@drawable/error"
+        android:layout_centerHorizontal="true"
+        android:text="\n请求数据异常！\n请检查网络连接，刷新试试！"
+        android:textSize="13dp"
+        android:textColor="@color/gary" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/tv_tishi"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="刷新"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="visible"
+        android:background="@drawable/rect_gary_bk"
+        android:textColor="@color/gary"
+        android:textSize="12dp" />
+        <!-- android:background="@drawable/btn_null_car_select" -->
+
+</RelativeLayout>

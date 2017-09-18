@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_invite_null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableTop="@drawable/order_zero"
+        android:layout_centerHorizontal="true"
+        android:text="\n你还没邀请过好友！\n快去邀请好友吧！"
+        android:textSize="12dp"
+        android:textColor="@color/gary" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/tv_tishi"
+        android:paddingRight="20dp"
+        android:text="**"
+        android:visibility="gone"
+        android:background="@drawable/btn_login_selcet"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+        <!-- android:background="@drawable/btn_null_car_select" -->
+
+</RelativeLayout>

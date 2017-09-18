@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 这是中间的部分 -->
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/head_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/green"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_lightgary"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/et_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入机构编号或者名称"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/lightgray"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/goods_icon_search" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="筛选"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/lightgray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/btn_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rect_lightgary"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_position" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_show_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="点击查看网点列表"
+                android:visibility="invisible"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/text_size_16" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent">
+
+            <include layout="@layout/point_info" />
+        </LinearLayout>
+
+        <com.yinglan.scrolllayout.ScrollLayout
+            android:id="@+id/scroll_down_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/tv_show_list2"
+                    android:background="@color/lightgray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line"
+                    android:orientation="horizontal">
+
+                    <com.yinglan.scrolllayout.content.ContentListView
+                        android:id="@+id/lv_addr"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        />
+                    <com.yinglan.scrolllayout.content.ContentListView
+                        android:id="@+id/lv_addr2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        />
+                    <com.yinglan.scrolllayout.content.ContentListView
+                        android:id="@+id/lv_addr3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.1"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:background="@android:color/white"
+                        />
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_show_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="网点列表"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/text_size_16"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/tv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/item_click_selector"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/text_size_14"
+                        android:padding="10dp"
+                        android:drawableLeft="@drawable/common_back"
+                        android:text=""/>
+            </RelativeLayout>
+        </com.yinglan.scrolllayout.ScrollLayout>
+    </FrameLayout>
+
+    <!-- 这是右侧的部分 -->
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgray"
+            android:padding="10dp"
+            android:text="筛选"
+            android:textColor="@color/lightgrey"
+            android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_show_zj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示支局" />
+
+                <CheckBox
+                    android:id="@+id/cb_show_wd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示网点" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="按区域检索" />
+
+                <RadioButton
+                    android:id="@+id/rb_org"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="按机构检索" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cpv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <cn.jeesoft.widget.pickerview.CharacterPickerView
+                android:id="@+id/cpv_area1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <cn.jeesoft.widget.pickerview.CharacterPickerView
+                android:id="@+id/cpv_area2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <cn.jeesoft.widget.pickerview.CharacterPickerView
+                android:id="@+id/cpv_area3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cpv_org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <cn.jeesoft.widget.pickerview.CharacterPickerView
+                android:id="@+id/cpv_org1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <cn.jeesoft.widget.pickerview.CharacterPickerView
+                android:id="@+id/cpv_org2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/clearing_btn_yellow"
+                android:text="重置"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/clearing_btn_org"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

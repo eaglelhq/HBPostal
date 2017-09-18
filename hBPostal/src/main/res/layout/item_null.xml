@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/order_zero"
+        android:gravity="center"
+        android:paddingTop="@dimen/y110"
+        android:paddingBottom="@dimen/y110"
+        android:text="\n暂无相关信息"
+        android:textColor="@color/gary"
+        android:textSize="@dimen/text_size_12" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tishi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_login_selcet"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="**"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:visibility="gone" />
+    <!-- android:background="@drawable/btn_null_car_select" -->
+
+</RelativeLayout>

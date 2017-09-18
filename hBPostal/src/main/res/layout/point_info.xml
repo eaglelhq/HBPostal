@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_pop"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_pt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:text="网点名称"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/lightblack" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="联系人"
+            android:drawableLeft="@drawable/icon_user"
+            android:textColor="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="18538062238"
+                android:drawableLeft="@drawable/icon_phone"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_add"
+            android:text="地址"
+            android:textColor="@android:color/darker_gray" />
+        <Button
+            android:id="@+id/btn_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_login_selcet"
+            android:text="开始导航"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_goto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/button_goto"/>
+</RelativeLayout>

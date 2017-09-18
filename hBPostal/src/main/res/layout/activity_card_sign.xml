@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightgrey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/tv_tishi"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/gray"
+        android:text="已将验证码发送至您的手机"
+        />
+
+    <EditText
+        android:id="@+id/et_yzm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="请输入您收到的短信验证码"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/lightgray"
+        android:textSize="14dp" />
+
+
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="请设置您的支付密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="18"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/lightgray"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/et_confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="请确认您的支付密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="18"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/lightgray"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_login_selcet"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_head"
+    android:fitsSystemWindows="true"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/common_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Title"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/text_size_18" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/life_icon_home"
+        android:padding="5dp"
+        android:background="@drawable/item_click_selector"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:background="@drawable/item_click_selector"
+        android:text="确定"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+</RelativeLayout>

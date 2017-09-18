@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_sort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Picture_sharing_mode"
+        android:background="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_QQ_share_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_QQ_share_way"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_email_share_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_email_share_way"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_wexin_share_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_wexin_share_way"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_http_share_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_http_share_way"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_selector"
+    >
+
+    <TextView
+        android:id="@+id/tv_point_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_user_name"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="网点/支局名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_point_name"
+        android:drawableLeft="@drawable/icon_phone"
+        android:padding="5dp"
+        android:text="18538665514"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_phone"
+        android:padding="5dp"
+        android:text="网点联系人"
+        android:drawableLeft="@drawable/icon_user"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="河南省郑州市高新区瑞达路96号"
+        android:drawableLeft="@drawable/icon_add"
+        android:textColor="@color/gary"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/lightgrey" />
+
+</RelativeLayout>

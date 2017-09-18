@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_no_bind"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/iv_order_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/traffic_icon_tips" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_order_add"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textColor="@color/yellow"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tv_tips_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_tips"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="您还未进行实名制认证，所以无法设置违章提醒，"
+        android:textColor="@color/gary"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tips_detail"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请先"
+            android:textColor="@color/gary"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_bind_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="绑定银行卡"
+            android:textColor="@color/green"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="进行实名制认证"
+            android:textColor="@color/gary"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

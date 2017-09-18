@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgray"/>
+    <include layout="@layout/item_null" />
+    <include layout="@layout/item_error" />
+
+    <com.yitao.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:background="@color/lightgrey"
+        android:layout_height="match_parent" >
+    </com.yitao.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

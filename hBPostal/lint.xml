@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="IncludeLayoutParam" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore">
+        <ignore path="src/com/ksource/hbpostal/activity/BaseActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ResourceAsColor" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+    <issue id="UseValueOf">
+        <ignore path="src/com/ksource/hbpostal/util/NotificactionUtils.java" />
+    </issue>
+</lint>

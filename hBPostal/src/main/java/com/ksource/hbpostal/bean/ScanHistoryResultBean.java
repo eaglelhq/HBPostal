@@ -1,0 +1,85 @@
+package com.ksource.hbpostal.bean;
+
+import java.util.List;
+
+public class ScanHistoryResultBean {
+
+	/**
+	 * history : [{"ID":"8ddf9c14d56e41c4ae56645bb97b214f","SELLER_ID":"fb55445134f2486f8bb536c0aa206bf0","MEMBER_ID":"5d71d941a4bd425191263dbf4ad9e46c","ORDER_ID":"DD-20170627-981850","PAY_FLOW_ID":null,"PAY_WAY":1,"PAY_TIME":"20170627191440","PAY_TYPE":0,"APPEAL_STATE":0,"REPLY_STATE":0,"TOTAL_AMOUNT":1,"PAY_AMOUNT":1,"SCORE_NUM":0,"MONEY_SET":1,"MEMBER_LEAVE_MSG":"","SELLER_LEVEL_MSG":"","IS_CHECK_BILL":0,"APPEAL_CONTENT":null,"APPEAL_TIME":null,"REPLY_CONTENT":null,"REPLY_USER_ID":null,"REPLY_TIME":null,"IS_SETTLE":0,"IS_OUT_SETTLE_BILL":0,"SETTLE_BILL_ID":null,"CLOSE_USER_ID":null,"CLOSE_REASON":null,"CLOSE_TIME":null},{"ID":"fb9351fa71c9486687310390ec3411df","SELLER_ID":"fb55445134f2486f8bb536c0aa206bf0","MEMBER_ID":"5d71d941a4bd425191263dbf4ad9e46c","ORDER_ID":"DD-20170627-969757","PAY_FLOW_ID":null,"PAY_WAY":1,"PAY_TIME":"20170627180626","PAY_TYPE":0,"APPEAL_STATE":0,"REPLY_STATE":0,"TOTAL_AMOUNT":10,"PAY_AMOUNT":0,"SCORE_NUM":2000,"MONEY_SET":1,"MEMBER_LEAVE_MSG":"bzhxh","SELLER_LEVEL_MSG":"bzhxh","IS_CHECK_BILL":0,"APPEAL_CONTENT":null,"APPEAL_TIME":null,"REPLY_CONTENT":null,"REPLY_USER_ID":null,"REPLY_TIME":null,"IS_SETTLE":0,"IS_OUT_SETTLE_BILL":0,"SETTLE_BILL_ID":null,"CLOSE_USER_ID":null,"CLOSE_REASON":null,"CLOSE_TIME":null},{"ID":"0db73dcdc98e4c36a8e848bb15199507","SELLER_ID":"fb55445134f2486f8bb536c0aa206bf0","MEMBER_ID":"5d71d941a4bd425191263dbf4ad9e46c","ORDER_ID":"DD-20170627-450954","PAY_FLOW_ID":null,"PAY_WAY":1,"PAY_TIME":"20170627180543","PAY_TYPE":0,"APPEAL_STATE":0,"REPLY_STATE":0,"TOTAL_AMOUNT":10,"PAY_AMOUNT":0,"SCORE_NUM":2000,"MONEY_SET":1,"MEMBER_LEAVE_MSG":"bzhxh","SELLER_LEVEL_MSG":"bzhxh","IS_CHECK_BILL":0,"APPEAL_CONTENT":null,"APPEAL_TIME":null,"REPLY_CONTENT":null,"REPLY_USER_ID":null,"REPLY_TIME":null,"IS_SETTLE":0,"IS_OUT_SETTLE_BILL":0,"SETTLE_BILL_ID":null,"CLOSE_USER_ID":null,"CLOSE_REASON":null,"CLOSE_TIME":null},{"ID":"a157ae9834564c168cb63e2e3f953a55","SELLER_ID":"fb55445134f2486f8bb536c0aa206bf0","MEMBER_ID":"5d71d941a4bd425191263dbf4ad9e46c","ORDER_ID":"DD-20170627-898942","PAY_FLOW_ID":null,"PAY_WAY":1,"PAY_TIME":"20170627172141","PAY_TYPE":0,"APPEAL_STATE":0,"REPLY_STATE":0,"TOTAL_AMOUNT":10,"PAY_AMOUNT":0,"SCORE_NUM":2000,"MONEY_SET":1,"MEMBER_LEAVE_MSG":"ghhhhh","SELLER_LEVEL_MSG":"ghhhhh","IS_CHECK_BILL":0,"APPEAL_CONTENT":null,"APPEAL_TIME":null,"REPLY_CONTENT":null,"REPLY_USER_ID":null,"REPLY_TIME":null,"IS_SETTLE":0,"IS_OUT_SETTLE_BILL":0,"SETTLE_BILL_ID":null,"CLOSE_USER_ID":null,"CLOSE_REASON":null,"CLOSE_TIME":null},{"ID":"1a790788991a47b2a02058fdb03d05d5","SELLER_ID":"129481923492wer","MEMBER_ID":"5d71d941a4bd425191263dbf4ad9e46c","ORDER_ID":"DD-20170627-902811","PAY_FLOW_ID":null,"PAY_WAY":1,"PAY_TIME":"20170627171558","PAY_TYPE":0,"APPEAL_STATE":0,"REPLY_STATE":0,"TOTAL_AMOUNT":15,"PAY_AMOUNT":0,"SCORE_NUM":0,"MONEY_SET":1,"MEMBER_LEAVE_MSG":"hsbshshsh","SELLER_LEVEL_MSG":"hsbshshsh","IS_CHECK_BILL":0,"APPEAL_CONTENT":null,"APPEAL_TIME":null,"REPLY_CONTENT":null,"REPLY_USER_ID":null,"REPLY_TIME":null,"IS_SETTLE":0,"IS_OUT_SETTLE_BILL":0,"SETTLE_BILL_ID":null,"CLOSE_USER_ID":null,"CLOSE_REASON":null,"CLOSE_TIME":null}]
+	 * total : 5
+	 * flag : 0
+	 * msg : 获取收款历史成功
+	 * success : true
+	 */
+
+	public int total;
+	public int flag;
+	public String msg;
+	public boolean success;
+	public List<HistoryBean> history;
+
+	public static class HistoryBean {
+		/**
+		 * ID : 8ddf9c14d56e41c4ae56645bb97b214f
+		 * SELLER_ID : fb55445134f2486f8bb536c0aa206bf0
+		 * MEMBER_ID : 5d71d941a4bd425191263dbf4ad9e46c
+		 * ORDER_ID : DD-20170627-981850
+		 * PAY_FLOW_ID : null
+		 * PAY_WAY : 1
+		 * PAY_TIME : 20170627191440
+		 * PAY_TYPE : 0
+		 * APPEAL_STATE : 0
+		 * REPLY_STATE : 0
+		 * TOTAL_AMOUNT : 1
+		 * PAY_AMOUNT : 1
+		 * SCORE_NUM : 0
+		 * MONEY_SET : 1
+		 * MEMBER_LEAVE_MSG :
+		 * SELLER_LEVEL_MSG :
+		 * IS_CHECK_BILL : 0
+		 * APPEAL_CONTENT : null
+		 * APPEAL_TIME : null
+		 * REPLY_CONTENT : null
+		 * REPLY_USER_ID : null
+		 * REPLY_TIME : null
+		 * IS_SETTLE : 0
+		 * IS_OUT_SETTLE_BILL : 0
+		 * SETTLE_BILL_ID : null
+		 * CLOSE_USER_ID : null
+		 * CLOSE_REASON : null
+		 * CLOSE_TIME : null
+		 */
+
+		public String ID;
+		public String SELLER_ID;
+		public String SHOP_NAME;
+		public String MEMBER_ID;
+		public String ORDER_ID;
+		public String PAY_FLOW_ID;
+		public int PAY_WAY;
+		public String PAY_TIME;
+		public int PAY_TYPE;
+		public int APPEAL_STATE;
+		public int REPLY_STATE;
+		public double TOTAL_AMOUNT;
+		public double PAY_AMOUNT;
+		public int SCORE_NUM;
+		public int MONEY_SET;
+		public String MEMBER_LEAVE_MSG;
+		public String SELLER_LEVEL_MSG;
+		public int IS_CHECK_BILL;
+		public String APPEAL_CONTENT;
+		public String APPEAL_TIME;
+		public String REPLY_CONTENT;
+		public String REPLY_USER_ID;
+		public String REPLY_TIME;
+		public int IS_SETTLE;
+		public int IS_OUT_SETTLE_BILL;
+		public String SETTLE_BILL_ID;
+		public String CLOSE_USER_ID;
+		public String CLOSE_REASON;
+		public String CLOSE_TIME;
+
+		
+	}
+}

@@ -1,0 +1,161 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+<!-- 全局activity切换动画 -->
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/left_translate_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/null_translate_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/null_translate_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_translate_anim</item>
+    </style>
+    
+    <style name="Popup_Animation_Alpha" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/layout_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/layout_alpha_out</item>
+    </style>
+    
+    <!-- <style name="home_color_shopping_button">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/color_shopping_button_bg</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style> -->
+    
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+    
+    <style name="tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">-1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+    </style>
+    <style name="title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/title_bg</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+    
+    <style name="checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+  	 <item name="android:button">@drawable/check_btn_selcet</item>
+  	 <item name="android:padding">5.0dip</item>
+  	 <item name="android:textColor">@color/checkbox_text_color</item>
+  	</style>
+  	
+    <style name="checkbox_collect" parent="@android:style/Widget.CompoundButton.CheckBox">
+  	 <item name="android:button">@null</item>
+  	 <item name="android:padding">5.0dip</item>
+  	 <item name="android:text">收藏</item>
+  	 <item name="android:drawableTop">@drawable/collect_btn_selcet</item>
+  	 <item name="android:textColor">@color/lightgray</item>
+  	 <item name="android:textSize">12dp</item>
+  	</style>
+    
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+    <!--自定义dialog背景全透明无边框theme -->  
+    <style name="MyDialog" parent="android:style/Theme.Dialog">  
+        <!--背景颜色及和透明程度-->  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <!--是否去除标题 -->  
+        <item name="android:windowNoTitle">true</item>  
+        <!--是否去除边框-->  
+        <item name="android:windowFrame">@null</item>  
+        <!--是否浮现在activity之上-->  
+        <item name="android:windowIsFloating">true</item>  
+        <!--是否模糊-->  
+        <item name="android:backgroundDimEnabled">true</item>  
+    </style>
+    <style name="DialogNoTitle" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item><!--除去title-->
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="StyleDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MatchWrapTv" parent="MatchWrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AutoWrapTv" parent="AutoWrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>

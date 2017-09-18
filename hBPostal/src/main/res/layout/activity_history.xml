@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_water"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="水费" />
+
+        <TextView
+            android:id="@+id/tv_ele"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_ele"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="电费" />
+
+        <TextView
+            android:id="@+id/tv_gas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_gas"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="燃气费" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_tv"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="有线电视" />
+
+        <TextView
+            android:id="@+id/tv_broad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_broad"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="固话宽带" />
+
+        <TextView
+            android:id="@+id/tv_tle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/hisytoy_button_tle"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="手机充值" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_wei"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/traffic_icon_remind2"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="违章提醒" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_selector"
+            android:gravity="center"
+            android:padding="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

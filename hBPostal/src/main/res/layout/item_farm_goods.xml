@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y70"
+        android:background="@drawable/item_click_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_goods"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_goods"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="体验装"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_goods_abs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_goods"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="购买需输入邀请码"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/lightgrey"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="asdas"
+            android:textColor="@color/red"
+            android:textSize="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_goods_abs"
+            android:layout_alignStart="@+id/tv_goods_abs"
+            android:layout_marginBottom="@dimen/x5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_goods_abs"
+            android:background="@drawable/rect_yellow_bk"
+            android:padding="5dp"
+            android:text="限购一件"
+            android:textColor="@color/orangered"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgrey"
+        />
+</LinearLayout>

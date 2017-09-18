@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_title" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgrey"
+        />
+
+    <include layout="@layout/item_error" />
+    <include layout="@layout/item_cart_null" />
+
+    <com.yitao.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_cart"
+        android:layout_width="match_parent"
+        android:background="@color/lightgrey"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+    </com.yitao.pulltorefresh.PullToRefreshListView>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgray"
+        />
+    <include layout="@layout/item_cart_bottom_layout" />
+
+</LinearLayout>

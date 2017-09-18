@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClsTpl>
+  <Classifier OutputType="1">
+    <!--0按照真实输出1一定输出一个-->
+    <!--尺度滤波器，根据证件的尺寸进行分类-->
+    <Filter Order="0" TypeID="0x0001" Name="Size" OutputType="0" FilterThresh="0.97">
+      <!--一代证幅面-->
+      <Dictionary ID="1" Width="88" Height="60" />
+      <!--二代证幅面单位毫米-->
+      <Dictionary ID="2" Width="86" Height="53" />
+      <!--护照-->
+      <Dictionary ID="3" Width="124" Height="87" />
+      <!--军官证-->
+      <Dictionary ID="4" Width="138" Height="103" />
+      <!--AVA6护照-->
+      <Dictionary ID="5" Width="124" Height="105" />
+      <!--开页护照-->
+      <Dictionary ID="6" Width="124" Height="174" />
+     <!--登机牌-->
+      <Dictionary ID="7" Width="144" Height="81" />
+      <!--边民证与律师证-->
+      <Dictionary ID="8" Width="87" Height="124" />
+    </Filter>
+    <Filter Order="4" TypeID="0x0002" Name="KeyWord" FilterThresh="0.60" OutputType="0" MatchType="0">
+      <NOKEYWORD DefaultThresh="0.48" />
+    </Filter> 
+  </Classifier>
+  <TemplateSet>
+   
+    <Template Order="2" MainID="0x0002" SubID="0x0001" Name="二代证正面" Width="86" Height="53">
+      <Classifier>
+
+        <Filter Index="0" TypeID="0x0001" SID="2"></Filter>
+        <Filter Index="4" TypeID="0x0002" CheckThresh="0.45">
+          <Region Left="0.015075" Right="0.50000" Top="0.725806" Bottom="0.99995">
+            <KeyWords Content="公民身份号码" CharType="1" CharNum="6" Charset="" CharH="0.047924" CharW="0.029534" Blank="0.002906" />
+            <OrcEngine OcrMainType="1" OcrSubType="18" FilterType="1" FillingMethod="0" ImgType="8" />
+            <Preprocess Binarization="6" Rotation="0" />
+          </Region>
+        </Filter>
+      </Classifier>
+    </Template>
+    <Template Order="3" MainID="0x0003" SubID="0x0001" Name="二代证背面" Width="86" Height="53">
+      <Classifier>
+        <Filter Index="0" TypeID="0x0001" SID="2"></Filter>
+        <Filter Index="4" TypeID="0x0002" CheckThresh="0.6">
+          <Region Left="0.232558" Right="0.918604" Top="0.056603" Bottom="0.245283">
+            <KeyWords Content="中华人民共和国" CharType="1" CharNum="7" Charset="" CharH="0.097168" CharW="0.059069" Blank="0.022674" />
+            <OrcEngine OcrMainType="1" OcrSubType="18" FilterType="1" FillingMethod="0" ImgType="8" />
+            <Preprocess Binarization="6" Rotation="0" />
+          </Region>
+          <Region Left="0.151162" Right="0.441860" Top="0.622641" Bottom="0.962264">
+            <KeyWords Content="签发机关有效期限" CharType="1" CharNum="8" Charset="" CharH="0.046415" CharW="0.028604" Blank="0.005930" />
+            <OrcEngine OcrMainType="1" OcrSubType="18" FilterType="1" FillingMethod="0" ImgType="8" />
+            <Preprocess Binarization="6" Rotation="0" />
+          </Region>
+        </Filter>
+      </Classifier>
+    </Template>
+  </TemplateSet>
+  <!--分类中所用到的识别核心-->
+  <OCRKenal DllPath="">
+    <Kenal MainType="1" SubType="18" LibPath="" />
+  </OCRKenal>
+  <!--图像预处理去黑边、倾斜纠正-->
+  <ImgPreprocess>
+    <EraseBlackBorder Status="0" Method="1" Thresh="0.80" />
+    <TiltCorrection Status="0" Thresh="0.000001" />
+  </ImgPreprocess>
+</ClsTpl>

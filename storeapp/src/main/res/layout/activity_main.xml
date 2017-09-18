@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gary" />
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/lightgrey"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/tab_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tab1_icon"
+            android:paddingTop="3dp"
+            android:text="@string/tab1"
+            android:textSize="@dimen/tab_text" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/tab_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tab2_icon"
+            android:paddingTop="3dp"
+            android:text="@string/tab2"
+            android:textSize="@dimen/tab_text" />
+
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/tab_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tab3_icon"
+            android:paddingTop="3dp"
+            android:text="@string/tab3"
+            android:textSize="@dimen/tab_text" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/tab_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tab4_icon"
+            android:paddingTop="3dp"
+            android:text="@string/tab4"
+            android:textSize="@dimen/tab_text" />
+    </RadioGroup>
+
+</LinearLayout>

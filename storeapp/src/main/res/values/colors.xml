@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFB31E</color>
+    <!-- 金色 -->
+    <color name="gold">#ffd700</color>
+    <!-- 粉红色 -->
+    <color name="pink">#ffc0cb</color>
+    <!-- 橙红色 -->
+    <color name="orangered">#ea0707</color>
+    <!-- 橙色 -->
+    <color name="orange">#ff5400</color>
+    <!-- 红色 -->
+    <color name="red">#ff0000</color>
+    <!-- 亮灰色 -->
+    <color name="lightgray">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="lightgary">#ededed</color>
+    <!-- 背景色 -->
+    <color name="lightgrey">#f0f2f5</color>
+    <!-- 透明黑 -->
+    <color name="lightblack">#4C4C4C</color>
+    <!-- 透明黑 -->
+    <color name="transparentblack">#66000000</color>
+    <!-- 暗灰色 -->
+    <color name="darkgray">#a9a9a9</color>
+    <!-- 亮绿色 -->
+    <color name="lightgreen">#69CA7B</color>
+    <!-- 亮天蓝色 -->
+    <color name="lightskyblue">#87cefa</color>
+    <!-- 天蓝色 -->
+    <color name="skyblue">#87ceeb</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="grey">#dbdbdb</color>
+    <!-- 绿色 -->
+    <color name="green">#01853e</color>
+    <!-- 暗绿色 -->
+    <color name="darkgreen">#016730</color>
+    <!-- 蓝色 -->
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+    <color name="gary">#999999</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="defaultTextColor">#666</color>
+    
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="backColor">#2000</color>
+    <color name="limit_buy_border_bg">#ffd4bc77</color>
+    <color name="search_toolbar_bg">#ff484B50</color>
+    <color name="toast_color">#ff2E76B9</color>
+    <color name="login_button">#ff775025</color>
+
+    <color name="colorPrimary">@color/green</color>
+    <color name="colorPrimaryDark">@color/gray</color>
+    <color name="colorAccent">@color/green</color>
+
+    <color name="action_bar_sign_btn_back_pressed">#80FFFFFF</color>
+    <color name="action_bar_sign_btn_back_normal">@color/white</color>
+    <color name="submit_btn_normal">@color/hex_1b89cd</color>
+    <color name="submit_btn_pressed">#166EA5</color>
+    <color name="submit_btn_disabled">@color/hex_bcbcbc</color>
+
+    <color name="hex_1b89cd">#FF1B89CD</color>
+    <color name="hex_323232">#FF323232</color>
+    <color name="hex_333333">#FF333333</color>
+    <color name="hex_4d4d4d">#FF4D4D4D</color>
+    <color name="hex_666666">#FF666666</color>
+    <color name="hex_7d7d7d">#FF7D7D7D</color>
+    <color name="hex_801b89cd">#801B89CD</color>
+    <color name="hex_828282">#FF828282</color>
+    <color name="hex_8d8d8d">#FF8D8D8D</color>
+    <color name="hex_999999">#FF999999</color>
+    <color name="hex_9c9c9c">#FF9C9C9C</color>
+    <color name="hex_bcbcbc">#FFBCBCBC</color>
+    <color name="hex_c6c6c6">#FFC6C6C6</color>
+    <color name="hex_d3d3d3">#FFD3D3D3</color>
+    <color name="hex_e9e9ea">#FFE9E9EA</color>
+    <color name="hex_e9e9e9">#FFE9E9E9</color>
+    <color name="hex_eeeeee">#FFEEEEEE</color>
+    <color name="hex_f0f0f0">#FFF0F0F0</color>
+    <color name="hex_f8f8f8">#FFF8F8F8</color>
+    <color name="hex_ff203a">#FFFF203A</color>
+    <color name="hex_4680d1">#FF4680d1</color>
+    <color name="hex_ca6914">#FFca6914</color>
+
+    <color name="navigationBarColor">#f46444</color>
+
+    <color name="colorPrimaryDarkTrans">#CCf57257</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey">
+
+    <include layout="@layout/head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgray" />
+
+    <include layout="@layout/item_error" />
+    <include layout="@layout/item_null" />
+
+    <com.yitao.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_yhq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightgrey" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_16"
+            android:text="共需金邮币："
+            android:paddingLeft="10dp"
+            android:textColor="@color/gary"/>
+        <TextView
+            android:id="@+id/tv_coins"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_16"
+            android:text=" 个"
+            android:textColor="@color/green"/>
+        <TextView
+            android:id="@+id/btn_get"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="立即兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/clearing_btn_green"/>
+    </LinearLayout>
+</LinearLayout>

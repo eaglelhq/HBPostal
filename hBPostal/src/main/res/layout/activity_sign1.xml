@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/head_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgary"
+        />
+    <LinearLayout
+        android:id="@+id/activity_main_ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/iv_last"
+            />
+
+        <TextView
+            android:id="@+id/activity_main_tv_year"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_14" />
+
+        <!--<TextView
+            android:id="@+id/activity_main_tv_month"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/hex_9c9c9c"
+            android:textSize="@dimen/text_size_14" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:rotation="180"
+            android:id="@+id/iv_next"
+            />
+    </LinearLayout>
+
+    <com.yitao.widget.KCalendar
+        android:id="@+id/activity_main_cv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x260" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/line"
+        />
+
+</LinearLayout>

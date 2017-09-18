@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">邮支付商家版</string>
+    <string name="tab1">二维码</string>
+    <string name="tab2">收款明细</string>
+    <string name="tab3">结算明细</string>
+    <string name="tab4">个人主页</string>
+
+</resources>
